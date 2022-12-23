@@ -1,0 +1,55 @@
+<!doctype html>
+<html>  
+<head>  
+  <meta charset="UTF-8">
+  <title> Online Compiler </title> 
+  <link rel="stylesheet" href="style.css">  
+  <linl rel="stylesheet" href="bootstrap.min.css" type="text/css"> 
+  
+  </head>
+  <body> 
+    <div class="a">Online Compiler</div>
+    <div class="b"> 
+    select languages; 
+  &nbsp; 
+  &nbsp;  
+  <select id="languages" class="languages" onechange="changeLanguage()">
+    <option value="c"> C </option>
+    <option value="cpp"> C++ </option>
+    <option value="php"> php </option>
+    <option value="python"> python</option>
+    <option value="node"> Node JS </option>
+     <option value="java"> Java </option> 
+
+  </select> 
+
+ <form id="myid"> <button class="y" onclick= "fun()">Reset</button></form>
+  <button class="y"  onclick="executeCode()">Shortcuts</button> 
+
+</div> 
+<div class="editor" id="editor"> 
+<textarea placeholder="write code" Id ="v"> </textarea> 
+<button class="y" onclick="copyText1()">Copy</button>  
+
+</div> 
+
+
+
+    <div class="button-container" > 
+      <button class="btn" onclick="executeCode()">Run</button>
+    </div> 
+    <div class="output" id="output">
+     <textarea placeholder="Input goes here....." Id="t">
+       
+     </textarea>
+     
+     <button class="y" onclick="copyText2()">Copy</button>  
+     </div> 
+     
+
+     
+
+ 
+  <script src="q.js"></script>
+ </body>
+</html>
